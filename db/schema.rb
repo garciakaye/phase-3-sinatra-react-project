@@ -10,9 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_06_212605) do
+ActiveRecord::Schema.define(version: 2021_12_06_221306) do
 
-  create_table "to_do_items", force: :cascade do |t|
+  create_table "items", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "name"
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2021_12_06_212605) do
     t.integer "list_id"
   end
 
-  create_table "to_do_lists", force: :cascade do |t|
+  create_table "lists", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "title"

@@ -1,5 +1,7 @@
 puts "🌱 Seeding spices..."
 
-# Seed your database here
+List.create(title: "Home")
+List.create(title: "School")
+List.create(title: "Work")
 
 puts "✅ Done seeding!"
